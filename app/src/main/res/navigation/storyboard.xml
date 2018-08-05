@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/storyboard"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.chatu.examplenavview.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/sessions"
+        android:name="com.example.chatu.examplenavview.sessions"
+        android:label="fragment_sessions"
+        tools:layout="@layout/fragment_sessions" >
+        <action
+            android:id="@+id/action_sessions_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.chatu.examplenavview.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameday"
+        android:name="com.example.chatu.examplenavview.gameday"
+        android:label="fragment_gameday"
+        tools:layout="@layout/fragment_gameday" >
+        <action
+            android:id="@+id/action_gameday_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/contact"
+        android:name="com.example.chatu.examplenavview.contact"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contact_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+</navigation>
